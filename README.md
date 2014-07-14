@@ -10,7 +10,7 @@ License
 
 Below we provide a definition and use for the different pieces that this web-site is comprised, and the licenses that this web-site use.
 
-* Code - by code it's understood that this is entirely in reference to filesthat contain HTML, CSS, JS and PHP code. Their content is licensed entirely in the following license:
+* Code - by code it's understood that this is entirely in reference to files that contain HTML, CSS, JS and PHP code. Their content is licensed entirely in the following license:
 
     * Apache License 2.0: This license covers all **Code** used in this web-site. Below is a disclaimer of the trademarked content used in these files.
     
