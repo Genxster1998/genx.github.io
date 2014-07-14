@@ -37,7 +37,7 @@ Usage
 
 * By using the sources in this repository you  "The User" accept the conditions (read. License) that this repository presents to you "The User" by Nitrux S.A. "The Owner".
 
-* By using the sources in this repository you "The User"  agree to follow and make correct use of content that Nitrux S.A. "The Owner" has made available to you "The User".
+* By using the sources in this repository you "The User"  agree to follow and make correct use of the content that Nitrux S.A. "The Owner" has made available to you "The User".
 
 * By using the sources in this repository you "The User" agree to not claim ownership of the elements marked as **trademarked** by Nitrux S.A. "The Owner" and to not modify or alter them in any way that results harmful to the image, values, brand and name of Nitrux S.A. "The Owner".
 
