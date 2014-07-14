@@ -27,5 +27,17 @@ Below we provide a definition and use for the different pieces that this web-sit
 
     * SIL OFL 1.1: This license covers the use of the web font "Font Awesome".
     * Apache License: This license covers the use of the web font "Roboto".
-    
-    
+
+Usage
+==============
+
+* By using the sources in this repository you accept the conditions (read. License) that this repository presents to you "The User" by Nitrux S.A. "The Owner".
+
+* By using the sources in this repository you agree to follow and make correct use of content that "The Owner" has made available to you "The User".
+
+* By using the sources in this repository you agree to not claim ownership of the elements marked as **trademarked** by Nitrux S.A. and to not modify or alter them in any way.
+
+* If you wish to use any of the elements marked as **trademarked** by Nitrux S.A. in your website please contact Nitrux S.A. at *contact@nitrux.in*
+
+
+*This repository is made public with the intention of teaching, learning and bug fixing.*
