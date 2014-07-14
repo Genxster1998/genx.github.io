@@ -1,7 +1,7 @@
 Nitrux S.A. - Website
 ==============
 
-This repository holds the sources for the Nitrux web-site. No content such as icons is to be found here.
+This repository holds the sources for the Nitrux web-site.
 
 ![Site preview](http://i.imgur.com/VTs0IFw.png "Nitrux S.A. web-site")
 
