@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="24"
+   height="24"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48+devel r"
+   sodipodi:docname="emblem-user.svg">
+  <defs
+     id="defs4">
+    <linearGradient
+       gradientTransform="matrix(0.4342346,0,0,0.5947449,-34.884962,-1.1462819)"
+       gradientUnits="userSpaceOnUse"
+       xlink:href="#linearGradient3678-6"
+       id="linearGradient3009-0"
+       y2="41.680771"
+       x2="115.62145"
+       y1="13.475067"
+       x1="115.62145" />
+    <linearGradient
+       id="linearGradient3678-6">
+      <stop
+         offset="0"
+         style="stop-color:#ffffff;stop-opacity:1"
+         id="stop3680-8" />
+      <stop
+         offset="1"
+         style="stop-color:#e6e6e6;stop-opacity:1"
+         id="stop3682-9" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3678-6-2">
+      <stop
+         id="stop3680-8-9"
+         offset="0"
+         style="stop-color:#ffffff;stop-opacity:1;" />
+      <stop
+         id="stop3682-9-9"
+         offset="1"
+         style="stop-color:#e6e6e6;stop-opacity:1;" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#000000"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="25.908676"
+     inkscape:cx="-4.7831726"
+     inkscape:cy="14.731059"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="668"
+     inkscape:window-x="-2"
+     inkscape:window-y="23"
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:showpageshadow="false"
+     borderlayer="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3830" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-1028.3622)">
+    <g
+       style="fill:#ffffff;fill-opacity:1;opacity:0.5"
+       transform="matrix(0.37209302,0,0,0.37209321,3.0697675,1030.5017)"
+       id="g3243">
+      <rect
+         style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.39999998;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3973"
+         width="43"
+         height="15.399944"
+         x="2.5"
+         y="32.600056"
+         ry="7.6999722" />
+      <rect
+         ry="0"
+         y="40.19989"
+         x="2.5"
+         height="7.8000002"
+         width="43"
+         id="rect3975"
+         style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.39999998;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <circle
+         style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.39999998;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="path3977"
+         transform="matrix(1.1738702,0,0,1.1738702,-8.8053092,0.8312432)"
+         cx="27.946283"
+         cy="12.922024"
+         r="9.3707123"
+         d="m 37.316996,12.922024 a 9.3707123,9.3707123 0 0 1 -9.370713,9.370712 9.3707123,9.3707123 0 0 1 -9.370712,-9.370712 9.3707123,9.3707123 0 0 1 9.370712,-9.3707125 9.3707123,9.3707123 0 0 1 9.370713,9.3707125 z" />
+    </g>
+  </g>
+</svg>

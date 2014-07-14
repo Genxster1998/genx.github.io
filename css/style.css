@@ -1,0 +1,3703 @@
+@charset 'UTF-8';
+
+@import url("http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900");
+@import url("font-awesome.min.css");
+
+/*
+	Helios 1.5 by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+	body.paused *
+	{
+		-moz-transition: none;
+		-webkit-transition: none;
+		-o-transition: none;
+		-ms-transition: none;
+		transition: none;
+	}
+
+	body
+	{
+		background: #f0f4f4;
+		color: #777;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 300;
+	}
+
+	body,input,textarea,select
+	{
+		font-size: 14pt;
+		line-height: 1.85em;
+	}
+
+	h1,h2,h3,h4,h5,h6
+	{
+		font-weight: 300;
+		color: #777;
+		line-height: 1.25em;
+	}
+	
+		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
+		{
+			color: inherit;
+			text-decoration: none;
+			border-bottom-color: transparent;
+		}
+		
+		h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong
+		{
+			font-weight: 400;
+		}
+
+	h2
+	{
+		font-size: 3.4em;
+	}
+	
+	h3
+	{
+		font-size: 1.25em;
+	}
+	
+	h4
+	{
+		font-size: 1em;
+		margin: 0 0 0.25em 0;
+	}
+	
+	.byline
+	{
+		display: block;
+		font-size: 1.7em;
+		margin-top: 1em;
+		line-height: 1.5em;
+	}
+
+	strong, b
+	{
+		font-weight: 400;
+		color: #5E5E5E;
+	}
+	
+	em, i
+	{
+		font-style: italic;
+	}
+
+	a
+	{
+		color: inherit;
+		/*border-bottom: solid 1px rgba(128,128,128,0.15);*/
+		text-decoration: none;
+		-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		-o-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+	}
+	
+		a:hover
+		{
+			color: #C9C9C9;
+			border-bottom-color: transparent;
+		}
+
+	sub
+	{
+		position: relative;
+		top: 0.5em;
+		font-size: 0.8em;
+	}
+	
+	sup
+	{
+		position: relative;
+		top: -0.5em;
+		font-size: 0.8em;
+	}
+	
+	blockquote
+	{
+		border-left: solid 0.5em #ddd;
+		padding: 1em 0 1em 2em;
+		font-style: italic;
+	}
+	
+	p, ul, ol, dl, table
+	{
+		margin-bottom: 1em;
+	}
+
+	p
+	{
+		text-align: justify;
+	}
+	
+	p.ppa
+	{
+		text-align: left;
+		font-size: 0.6em;
+		font-family: 'Mono', Monospace
+	}
+
+	br.clear
+	{
+		clear: both;
+	}
+	
+	header
+	{
+		margin: 0 0 1em 0;
+	}
+	
+		header .byline
+		{
+			margin-bottom: 2em;
+		}
+		
+	footer
+	{
+		margin: 2.5em 0 0 0;
+	}
+		
+	hr
+	{
+		position: relative;
+		display: block;
+		border: 0;
+		top: 4.5em;
+		margin-bottom: 0em;
+
+		height: 0px;
+		border-top: solid 1px rgba(128,128,128,0.0);
+		border-bottom: solid 1px rgba(128,128,128,0.0);
+	}
+	
+		/*hr:before,
+		hr:after*/
+		{
+			content: '';
+			position: absolute;
+			top: -8px;
+			display: block;
+			width: 1px;
+			height: 21px;
+			background: rgba(128,128,128,0.2);			
+		}
+
+		/*hr:before
+		{
+			left: -1px;
+		}
+
+		hr:after
+		{
+			right: -1px;
+		}*/
+
+	.timestamp
+	{
+		color: rgba(128,128,128,0.75);
+		font-size: 0.8em;
+	}
+
+	/* Sections/Articles */
+	
+		section,
+		article
+		{
+			margin-bottom: 3em;
+		}
+		
+		section > :last-child,
+		article > :last-child
+		{
+			margin-bottom: 0;
+		}
+
+		section:last-child,
+		article:last-child
+		{
+			margin-bottom: 0;
+		}
+
+		.row > section,
+		.row > article
+		{
+			margin-bottom: 0;
+		}
+
+		section.special > header,
+		section.special > footer,
+		article.special > header,
+		article.special > footer
+		{
+			text-align: center;
+		}
+
+	/* Images */
+
+		.image
+		{
+			position: relative;
+			display: inline-block;
+			border: 0;
+			outline: 0;
+		}
+		
+			/* Uncomment the block below if you want linked images to highlight on hover */
+		
+			/*
+			a.image:before
+			{
+				content: '';
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				background: #fff;
+				opacity: 0;
+				-moz-transition: opacity 0.35s ease-in-out;
+				-webkit-transition: opacity 0.35s ease-in-out;
+				-o-transition: opacity 0.35s ease-in-out;
+				-ms-transition: opacity 0.35s ease-in-out;
+				transition: opacity 0.35s ease-in-out;
+			}
+			
+				a.image:hover:before
+				{
+					opacity: 0.15;
+				}
+			*/
+		
+			.image img
+			{
+				display: block;
+				width: 100%;
+			}
+
+			.image.full
+			{
+				display: block;
+				width: 100%;
+			}
+
+			.image.featured
+			{
+				display: block;
+				width: 102%;
+				margin: 0 0 4em 0;
+			}
+			
+			.image.software
+			{
+				display: block;
+				width: 100%;
+				margin: 0 0 4em 0;
+			}
+			
+			.image.left
+			{
+				float: left;
+				margin: 0 2em 2em 0;
+			}
+			
+			.image.centered
+			{
+				display: block;
+				margin: 0 0 2em 0;
+			}
+
+				.image.centered img
+				{
+					margin: 0 auto;
+					width: auto;
+				}
+
+	/* Lists */
+
+		ul.style1
+		{
+			list-style: disc;
+			margin-left: 1em;
+		}
+		
+			ul.style1 li
+			{
+				padding-left: 0.5em;
+				margin: 0.75em 0 0.75em 0;
+			}
+
+			ul.style1 li:first-child
+			{
+				margin-top: 0;
+			}
+
+		ul.links
+		{
+			list-style: decimal;
+			margin-left: 1em;
+		}
+
+			ul.links li
+			{
+				display: inline;
+				border-left: solid 1px #d0d0d0;
+				padding-left: 1em;
+				margin-left: 1em;
+			}
+			
+			ul.links li:first-child
+			{
+				margin-left: 0;
+				padding-left: 0;
+			}
+
+		ul.actions
+		{
+			margin-top: 2.5em;
+			clear: both;
+		}
+
+		ul.divided
+		{
+		}
+
+			ul.divided li
+			{
+				border-top: solid 1px #e5e5e5;
+			}
+
+			ul.divided li:first-child
+			{
+				border-top: 0;
+				margin-top: 0;
+				padding-top: 0;
+			}
+
+		ul.icons
+		{
+		}	
+
+			ul.icons > li
+			{
+				position: relative;
+				padding: 2em 0 0 3em;
+			}
+			
+			ul.icons > li:before
+			{
+				position: absolute;
+				left: 0;
+				top: 1.5em;
+				display: block;
+				background: #878787;
+				color: #e4e4e4;
+				width: 1.65em;
+				height: 1.65em;
+				border-radius: 1.65em;
+				line-height: 1.65em;
+				text-align: center;
+				box-shadow: 0.125em 0.175em 0 0 rgba(0,0,0,0.125);
+			}
+
+			ul.icons > li:first-child
+			{
+				padding-top: 0;
+			}
+			
+				ul.icons > li:first-child:before
+				{
+					top: 0;
+				}
+
+		ol.style1
+		{
+			list-style: decimal;
+			margin-left: 1em;
+		}
+		
+			ol.style1 li
+			{
+				padding-left: 0.5em;
+				margin: 0.75em 0 0.75em 0;
+			}
+
+			ol.style1 li:first-child
+			{
+				margin-top: 0;
+			}
+
+	/* Forms */
+
+		form
+		{
+		}
+		
+			form label
+			{
+				display: block;
+				text-align: left;
+				margin-bottom: 0.5em;
+			}
+		
+			form input.text,
+			form select,
+			form textarea
+			{
+				position: relative;
+				-webkit-appearance: none;
+				display: block;
+				border: 0;
+				background: #fff;
+				background: rgba(255,255,255,0.75);
+				width: 100%;
+				border-radius: 0.35em;
+				padding: 0.75em 1em 0.75em 1em;
+				box-shadow: inset 0 0.1em 0.1em 0 rgba(0,0,0,0.05);
+				border: solid 1px rgba(0,0,0,0.15);
+				-moz-transition: all 0.35s ease-in-out;
+				-webkit-transition: all 0.35s ease-in-out;
+				-o-transition: all 0.35s ease-in-out;
+				-ms-transition: all 0.35s ease-in-out;
+				transition: all 0.35s ease-in-out;
+			}
+
+				form input.text:hover,
+				form select:hover,
+				form textarea:hover
+				{
+				}
+
+				form input.text:focus,
+				form select:focus,
+				form textarea:focus
+				{
+					box-shadow: 0 0 2px 1px #8ededc;
+					background: #fff;
+				}
+				
+				form textarea
+				{
+					min-height: 14em;
+				}
+
+				form .formerize-placeholder
+				{
+					color: #555 !important;
+				}
+
+				form ::-webkit-input-placeholder
+				{
+					color: #555 !important;
+				}
+
+				form :-moz-placeholder
+				{
+					color: #555 !important;
+				}
+
+				form ::-moz-placeholder
+				{
+					color: #555 !important;
+				}
+
+				form :-ms-input-placeholder
+				{
+					color: #555 !important;
+				}
+
+				form ::-moz-focus-inner
+				{
+					border: 0;
+				}
+			
+	/* Tables */
+	
+		table
+		{
+			width: 100%;
+		}
+		
+			table.style1
+			{
+				width: 100%;
+			}
+			
+				table.style1 tbody tr:nth-child(2n+2)
+				{
+					background: #f4f4f4;
+				}
+				
+				table.style1 td
+				{
+					padding: 0.5em 1em 0.5em 1em;
+				}
+				
+				table.style1 th
+				{
+					text-align: left;
+					font-weight: 400;
+					padding: 0.5em 1em 0.5em 1em;
+				}
+			
+				table.style1 thead
+				{
+					background: #444;
+					color: #fff;
+				}
+				
+				table.style1 tfoot
+				{
+					background: #eee;
+				}
+				
+				table.style1 tbody
+				{
+				}
+
+	/* Buttons */
+		
+		.button
+		{
+			-webkit-appearance: none;
+			position: relative;
+			display: inline-block;
+			background: #3d3d3d;
+			padding: 0.85em 3em 0.85em 3em;
+			border-radius: 0;
+			cursor: pointer;
+			border: 0;
+			color: #fff;
+			text-align: center;
+			text-decoration: none;
+			-moz-transition: all 0.25s ease-in-out;
+			-webkit-transition: all 0.25s ease-in-out;
+			-o-transition: all 0.25s ease-in-out;
+			-ms-transition: all 0.25s ease-in-out;
+			transition: all 0.25s ease-in-out;
+		}
+
+			.button:hover
+			{
+				background: #4f4f4f;
+			}
+		
+			.button.alt
+			{
+			  color: inherit;
+			  box-shadow: inset 0 0 0 1px #e6e6e6;
+			  background: none;
+			}
+
+				.button.alt:hover
+				{
+				  background: rgba(0,0,0,0.025);
+				}
+				
+				.button.alt:active
+				{
+				}
+		
+			.button.small
+			{
+			}
+			
+			.button.big
+			{
+			}
+			
+			.button.huge
+			{
+			}
+			
+			.button.google
+			{
+				background: none;
+				box-shadow: inset 0 0 0 1px #b3b3b3;
+				padding: 0.85em 2em 0.85em 2em;
+			}
+			
+				.button.google:hover
+					{
+						background: #e16151;
+					}
+			.button.twitter
+			{
+				background: none;
+				box-shadow: inset 0 0 0 1px #b3b3b3;
+				padding: 0.85em 2em 0.85em 2em;
+			}
+			
+				.button.twitter:hover
+					{
+						background: #55acee;
+					}
+			.button.facebook
+			{
+				background: none;
+				box-shadow: inset 0 0 0 1px #b3b3b3;
+				padding: 0.85em 2em 0.85em 2em;
+			}
+			
+				.button.facebook:hover
+					{
+						background: #43609c;
+					}
+			.button.link
+			{
+				background: none;
+				box-shadow: inset 0 0 0 1px #b3b3b3;
+				padding: 0.85em 2em 0.85em 2em;
+			}
+			
+				.button.link:hover
+					{
+						background: #34495e;
+					}
+			
+	/* Posts */
+
+		.post
+		{
+		}
+		
+			.post.stub
+			{
+				text-align: center;
+			}
+			
+				.post.stub header
+				{
+					margin: 0;
+				}
+
+/*********************************************************************************/
+/* Wrapper                                                                       */
+/*********************************************************************************/
+
+	.wrapper
+	{
+		background: #fff;
+		margin: 0 0 2em 0;
+		padding: 6em 0 6em 0;
+	}
+	
+		.wrapper.style1
+		{
+		}
+
+		.wrapper.style2
+		{
+			padding-top: 0;
+		}
+		
+		.wrapper.style3
+		{
+			padding: 3em 0 6em 0;
+		}
+		
+		.wrapper.style4
+		{
+			padding: 0em 0 2em 0;
+
+		}
+		.wrapper.style5
+		{
+			padding: 6em 0 0em 0;
+
+		}
+		.wrapper.style6
+		{
+			padding: 0em 0 6em 0;
+
+		}
+		.wrapper.style7
+		{
+			padding: 0em 0 0em 0;
+
+		}
+		.wrapper.style8
+		{
+			padding: 3em 0 0em 0;
+
+		}
+
+/*********************************************************************************/
+/* Social Icon Styles                                                            */
+/*********************************************************************************/
+
+	ul.contact
+	{
+		padding: 1em 0em 5em 0em;
+		list-style: none;
+		cursor: default;
+	}
+	
+	ul.contact li
+	{
+		display: inline-block;
+		margin: 0 1em;
+	}
+	
+	ul.contact li span
+	{
+		display: none;
+		margin: 0;
+		padding: 0;
+	}
+	
+	ul.contact li a
+	{
+		color: inherit;
+		font-size: 1.75em;
+		display: inline-block;
+		-moz-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+		-webkit-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+		-o-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+		-ms-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+		transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+	}
+	
+	ul.contact li a:hover
+	{
+		color: #fff;
+	}
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+	#header
+	{
+		position: relative;
+		background-image: url('../images/header.png');
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+		color: #fff;
+		text-align: center;
+		padding: 2.5em 0 2em 0;
+		cursor: default;
+	}
+
+		.homepage #header
+		{
+/*			padding: 4em 0 4em 0;*/
+		}
+	
+			.homepage #header .overlay
+			{
+				content: '';
+				background: #1C0920;
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				opacity: 1.0;
+				-moz-transition: opacity 1s ease-in-out;
+				-webkit-transition: opacity 1s ease-in-out;
+				-o-transition: opacity 1s ease-in-out;
+				-ms-transition: opacity 1s ease-in-out;
+				transition: opacity 1s ease-in-out;
+			}
+		
+			.homepage #header.ready .overlay
+			{
+				opacity: 0;
+			}
+
+		#header .inner
+		{
+			position: relative;
+			z-index: 1;
+			margin: 0;
+			padding: 4em 0 0 0;
+		}
+	
+		#header h1
+		{
+			color: #fff;
+			font-size: 3em;
+			line-height: 1em;
+		}
+
+			.homepage #header h1
+			{
+				font-size: 4em;
+			}
+		
+			#header h1 a
+			{
+				color: inherit;
+				text-decoration: none;
+				-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+				-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+				-o-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+				-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+				transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			}
+			
+			#header h1 a:hover
+			{
+				color: rgba(255,255,255,0.5);
+				border-bottom-color: transparent;
+			}
+	
+		#header .byline
+		{
+			font-size: 1.25em;
+			margin: 0;
+		}
+		
+		#header .button
+		{
+			border-radius: 0%;
+			width: 9.0em;
+			height: 3.0em;
+			line-height: 3.0em;
+			text-align: center;
+			font-size: 1.0em;
+			padding: 0;
+		}
+		
+		#header header
+		{
+			display: inline-block;
+		}
+		
+		#header footer
+		{
+			margin: 1em 0 0 0;
+		}
+		
+		#header hr
+		{
+			top: 1.5em;
+			margin-bottom: 3em;
+
+			border-bottom-color: rgba(192,192,192,0.35);
+			box-shadow: inset 0 1px 0 0 rgba(192,192,192,0.35);
+		}
+		
+			#header hr:before,
+			#header hr:after
+			{
+				background: rgba(192,192,192,0.35);
+			}
+
+/*********************************************************************************/
+/* Nav                                                                           */
+/*********************************************************************************/
+
+	#nav
+	{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		text-align: center;
+		padding: 1.5em 0 1.5em 0;
+		z-index: 1;
+		overflow: hidden;
+		cursor: default;
+	}
+		/*Valores predeterminados del nav bar*/
+		#nav > ul
+		{
+			line-height: 0px;
+			position: relative;
+			display: inline-block;
+			margin: 0;
+			height: 0px; /*Altura de los bordes restantes en el nav*/
+			border-left: solid 1px rgba(192,192,192,0.35);
+			border-right: solid 1px rgba(192,192,192,0.35);
+			color: #fff;
+		}
+			#nav > ul > li
+			{
+				display: inline-block;
+				margin: 0px 0.5em 0 0.5em;
+				padding: 0.85em;
+			}
+			
+				#nav > ul > li > a
+				{
+					border: 0;
+					padding: 0.85em;
+					margin: 0 0.5em 0 0.5em;
+					-moz-transition: all 0.25s ease-in-out;
+					-webkit-transition: all 0.25s ease-in-out;
+					-o-transition: all 0.25s ease-in-out;
+					-ms-transition: all 0.25s ease-in-out;
+					transition: all 0.25s ease-in-out;
+					background: none;
+					box-shadow: inset 0 0 0 1px rgba(255,255,255,0.01);
+					color: #fff;
+				}
+					#nav > ul > li > a:before
+					{
+					-moz-transition: all 0.25s ease-in-out;
+					-webkit-transition: all 0.25s ease-in-out;
+					-o-transition: all 0.25s ease-in-out;
+					-ms-transition: all 0.25s ease-in-out;
+					transition: all 0.25s ease-in-out;
+					background: none;
+					}
+					
+					#nav > ul > li > a > span
+					{
+					}
+				/*Transforma el menu del nav bar*/
+				#nav > ul > li.active,
+				#nav > ul > li:hover
+				{
+					background: transparent;
+					padding: 0.85em;
+
+				}
+
+					#nav > ul > li.active > a,
+					#nav > ul > li:hover > a
+					{
+						-moz-transition: all 0.25s ease-in-out;
+						-webkit-transition: all 0.25s ease-in-out;
+						-o-transition: all 0.25s ease-in-out;
+						-ms-transition: all 0.25s ease-in-out;
+						transition: all 0.25s ease-in-out;
+						padding: 0.85em;
+						background: none;
+						box-shadow: inset 0 0 0 1px rgba(255,255,255,0.5);
+						color: rgba(255,255,255,0.5);
+					}
+
+						#nav > ul > li.active > a:before,
+						#nav > ul > li:hover > a:before
+						{
+						}
+				
+						#nav > ul > li.active > a > span,
+						#nav > ul > li:hover > a > span
+						{
+						}
+
+	.dropotron
+	{
+		background: rgba(255,255,255,0.975);
+		padding: 1em 1.25em 1em 1.25em;
+		line-height: 1em;
+		height: auto;
+		text-align: left;
+		border-radius: 0.5em;
+		box-shadow: 0 0.15em 0.25em 0 rgba(0,0,0,0.25);
+		min-width: 12em;
+	}
+	
+		.dropotron li
+		{
+			border-top: solid 1px rgba(128,128,128,0.2);
+			color: #5b5b5b;
+		}
+		
+			.dropotron li:first-child
+			{
+				border-top: 0;
+			}
+
+			.dropotron li:hover
+			{
+				color: #ef8376;
+			}
+
+			.dropotron li a,
+			.dropotron li span
+			{
+				display: block;
+				border: 0;
+				padding: 0.5em 0 0.5em 0;
+				-moz-transition: color 0.35s ease-in-out;
+				-webkit-transition: color 0.35s ease-in-out;
+				-o-transition: color 0.35s ease-in-out;
+				-ms-transition: color 0.35s ease-in-out;
+				transition: color 0.35s ease-in-out;
+			}
+		
+		.dropotron.level-0
+		{
+			margin-top: 2em;
+			font-size: 0.9em;
+		}
+		
+			.dropotron.level-0:before
+			{
+				content: '';
+				position: absolute;
+				left: 50%;
+				top: -0.7em;
+				margin-left: -0.75em;
+				border-bottom: solid 0.75em rgba(255,255,255,0.975);
+				border-left: solid 0.75em rgba(64,64,64,0);
+				border-right: solid 0.75em rgba(64,64,64,0);
+			}
+
+/*********************************************************************************/
+/* Banner                                                                        */
+/*********************************************************************************/
+
+	#banner
+	{
+		background: #fff;
+		text-align: center;
+		padding: 4.5em 0 4.5em 0;
+	}
+	
+	#banner p
+	{
+		text-align: center;
+	}
+
+/*********************************************************************************/
+/* Content                                                                       */
+/*********************************************************************************/
+
+	#content
+	{
+	}
+
+		#content > hr
+		{
+			top: 3em;
+			margin-bottom: 6em;
+		}
+		
+		#content > section
+		{
+			margin-bottom: 0;
+		}
+		
+/*********************************************************************************/
+/* Sidebar                                                                       */
+/*********************************************************************************/
+
+	#sidebar
+	{
+	}
+	
+		#sidebar > hr.first
+		{
+			display: none;
+		}
+	
+		#sidebar > hr
+		{
+			top: 3em;
+			margin-bottom: 6em;
+		}
+		
+		#sidebar > section
+		{
+			margin-bottom: 0;
+		}
+
+/*********************************************************************************/
+/* Main                                                                          */
+/*********************************************************************************/
+
+	#main
+	{
+	}
+	
+		#main section:first-of-type
+		{
+			padding-top: 2em;
+		}		
+	
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+
+	#footer
+	{
+		position: relative;
+		text-align: center;
+		background: #121212;
+		padding: 6em 0 0 0;
+	}
+	
+	#footer header h2
+	{
+		color: #FFF !important;
+	}
+	
+	#footer header .byline
+	{
+		color: rgba(255,255,255,.2);
+	}
+
+/*********************************************************************************/
+/* Contact                                                                        */
+/*********************************************************************************/
+
+	#contact
+	{
+		position: relative;
+		text-align: center;
+		background: #121212;
+		padding: 10em 0em 0em 0em;
+	}
+	
+	#contact header h2
+	{
+		color: #FFF !important;
+	}
+	
+	#contact header .byline
+	{
+		color: rgba(255,255,255,.2);
+	}
+			
+/*********************************************************************************/
+/* Blog                                                                        */
+/*********************************************************************************/
+
+	#blog-posts
+	{
+		overflow: hidden;
+		padding: 1.5em 0em;
+		text-align: left;
+	}
+	
+	#box1
+	{
+		float: left;
+		width: 354px;
+		margin-right: 24px;
+		padding-right: 30px;
+	}
+	
+/*********************************************************************************/
+/* Copyright                                                                     */
+/*********************************************************************************/
+	
+	#copyright
+	{
+		position: relative;
+		text-align: center;
+		color: #774535;
+	}
+	
+	#copyright .container
+	{
+		padding: 3em 0em;
+		border-top: 1px solid;
+		border-color: rgba(255,255,255,.05);
+		color:  rgba(255,255,255,.1);
+	}
+	
+	#copyright a
+	{
+		text-decoration: none;
+		color:  rgba(255,255,255,.2);
+	}
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+					Custom Code Section
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Input fields
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+input[type=submit] {
+    /*padding: 0.5%;
+    outline: none;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    background: #2c3e50;*/
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    font-size: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    cursor: pointer;
+}
+
+input[type=entry] {
+    padding: 2%;
+    outline:none;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    background: #f9f9f9;
+    -webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+    -moz-box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+    position: relative;
+    display: inline-block;
+    color: #333;
+    font-weight: 300;
+    font-size: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.currency {
+    padding: 0%;
+    padding-left: 0;
+    color: #888;
+}
+.buttonHolder{ 
+    text-align: center;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Toggle menu
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.toggle-view > li {
+    margin-top: 1em;
+    position: relative; }
+.toggle-title {padding: 0.8em 2em;}
+.toggle-title-detail {
+    font-size: 0.8em;
+    color: #999;
+    font-weight: normal;
+    text-transform: lowercase; }
+.toggle-title:after {
+    content: "\25C0";
+    float: right;
+    color: #999; }
+.toggle-title:hover:after { color: #555 }
+.tactive { background: #FFF }
+.tactive:after {
+    content: "\25BC";
+    color: #555;}
+.toggle {
+    padding: 1em 2em;
+    display: none;
+    overflow: hidden; }
+.toggle > ul li { line-height: 2.5 }
+.toggle > ul li:before {
+    content: "\2714 ";
+    color: #ddd;
+    margin-right: 1em; }
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Custom Button
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.buttonDiscover
+		{
+			-webkit-appearance: none;
+			position: relative;
+			display: inline-block;
+			padding: 0.85em 3em 0.85em 3em;
+			border-radius: 0;
+			cursor: pointer;
+			border: 0;
+			text-align: center;
+			text-decoration: none;
+			-moz-transition: all 0.25s ease-in-out;
+			-webkit-transition: all 0.25s ease-in-out;
+			-o-transition: all 0.25s ease-in-out;
+			-ms-transition: all 0.25s ease-in-out;
+			transition: all 0.25s ease-in-out;
+			background: rgba(255,255,255,0.15);
+			box-shadow: inset 0 0 0 1px #fff;
+			color: #fff;
+		}
+	.buttonDiscover:hover
+		{
+			background: none;
+			box-shadow: inset 0 0 0 1px rgba(255,255,255,0.5);
+			color: rgba(255,255,255,0.5);
+		}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Scroll up code: <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* scroll to top */
+.scrollup{
+    position:fixed;
+	width:32px;
+	height:32px;
+    bottom:0px;
+    right:20px;
+	background: #222;
+	
+}
+
+a.scrollup {
+	outline:0;
+	text-align: center;
+}
+
+a.scrollup:hover,a.scrollup:active,a.scrollup:focus {
+	opacity:1;
+	text-decoration:none;
+}
+a.scrollup i {
+	margin-top: 10px;
+	color: #fff;
+}
+a.scrollup i:hover {
+	text-decoration:none;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Sections
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*********************************************************************************/
+/* Featured                                                                      */
+/*********************************************************************************/
+	
+	#featured
+	{
+		position: relative;
+		background: #fff;
+		text-align: center;
+		padding: 3em 0em 10em 0em;
+	}
+	
+	#featured h3
+	{
+		display: block;
+		font-weight: 300;
+	}
+
+	#featured .pennant
+	{
+		font-size: 4em;
+	}
+	
+	#featured .button
+	{
+		margin-top: 1.5em;
+	}
+	
+	#featured p
+	{
+		text-align: center;
+	}
+
+/*********************************************************************************/
+/* Before Footer                                                                        */
+/*********************************************************************************/
+
+	#before-footer
+	{
+		position: relative;
+		background-image: url('../images/header.png');
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+		color: #fff;
+		text-align: center;
+		padding: 2.5em 0 2em 0;
+		cursor: default;
+	}
+
+		.homepage #before-footer
+		{
+			padding: 4em 0 6em 0;
+		}
+	
+			.homepage #before-footer .overlay
+			{
+				content: '';
+				background: #1C0920;
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				opacity: 1.0;
+				-moz-transition: opacity 2s ease-in-out;
+				-webkit-transition: opacity 2s ease-in-out;
+				-o-transition: opacity 2s ease-in-out;
+				-ms-transition: opacity 2s ease-in-out;
+				transition: opacity 2s ease-in-out;
+			}
+		
+			.homepage #before-footer.ready .overlay
+			{
+				opacity: 0;
+			}
+
+		#before-footer .inner
+		{
+			position: relative;
+			z-index: 1;
+			margin: 0;
+			padding: 4em 0 0 0;
+		}
+		
+		#before-footer footer
+		{
+			margin: 1em 0 0 0;
+		}
+		
+		#before-footer h2
+		{
+			color: #fff;
+			font-size: 3em;
+			line-height: 1em;
+		}
+		
+		#before-footer h2 strong
+		{
+			font-weight: 400;
+			color: #fff;
+		}
+		
+		#before-footer h2 a
+		{
+			color: inherit;
+			text-decoration: none;
+			-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-o-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		}
+		
+		#before-footer h2 a:hover
+		{
+			color: rgba(255,255,255,0.5);
+			border-bottom-color: transparent;
+		}
+		
+/*********************************************************************************/
+/* After Banner Software                                                         */
+/*********************************************************************************/
+
+	#after-banner-software
+	{
+		position: relative;
+		background-image: url('../images/code.png');
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+		color: #fff;
+		text-align: center;
+		padding: 2.5em 0 2em 0;
+		cursor: default;
+	}
+
+		.homepage #after-banner-software
+		{
+			padding: 4em 0 6.5em 0;
+		}
+	
+			.homepage #after-banner-software .overlay
+			{
+				content: '';
+				background: #1C0920;
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				opacity: 1.0;
+				-moz-transition: opacity 2s ease-in-out;
+				-webkit-transition: opacity 2s ease-in-out;
+				-o-transition: opacity 2s ease-in-out;
+				-ms-transition: opacity 2s ease-in-out;
+				transition: opacity 2s ease-in-out;
+			}
+		
+			.homepage #after-banner-software.ready .overlay
+			{
+				opacity: 0;
+			}
+
+		#after-banner-software .inner
+		{
+			position: relative;
+			z-index: 1;
+			margin: 0;
+			padding: 4em 0 0 0;
+		}
+		
+		#after-banner-software footer
+		{
+			margin: 1em 0 0 0;
+		}
+		
+		#after-banner-software h2
+		{
+			color: #fff;
+			font-size: 3em;
+			line-height: 1em;
+		}
+		
+		#after-banner-software h2 strong
+		{
+			font-weight: 400;
+			color: #fff;
+		}
+		
+		#after-banner-software h2 a
+		{
+			color: inherit;
+			text-decoration: none;
+			-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-o-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		}
+		
+		#after-banner-software h2 a:hover
+		{
+			color: rgba(255,255,255,0.5);
+			border-bottom-color: transparent;
+		}
+	
+/*********************************************************************************/
+/* After Banner Software                                                         */
+/*********************************************************************************/
+
+	#after-banner-software2
+	{
+		position: relative;
+		background-image: url('../images/lockscreen.png');
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+		color: #fff;
+		text-align: center;
+		padding: 2.5em 0 2em 0;
+		cursor: default;
+	}
+
+		.homepage #after-banner-software2
+		{
+			padding: 4em 0 6.5em 0;
+		}
+	
+			.homepage #after-banner-software2 .overlay
+			{
+				content: '';
+				background: #1C0920;
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				opacity: 1.0;
+				-moz-transition: opacity 2s ease-in-out;
+				-webkit-transition: opacity 2s ease-in-out;
+				-o-transition: opacity 2s ease-in-out;
+				-ms-transition: opacity 2s ease-in-out;
+				transition: opacity 2s ease-in-out;
+			}
+		
+			.homepage #after-banner-software2.ready .overlay
+			{
+				opacity: 0;
+			}
+
+		#after-banner-software2 .inner
+		{
+			position: relative;
+			z-index: 1;
+			margin: 0;
+			padding: 4em 8em 0em 8em;
+		}
+		
+		#after-banner-software2 footer
+		{
+			margin: 1em 0 0 0;
+		}
+		
+		#after-banner-software2 h2
+		{
+			color: #fff;
+			font-size: 3em;
+			line-height: 1em;
+		}
+		
+		#after-banner-software2 h2 strong
+		{
+			font-weight: 400;
+			color: #fff;
+		}
+		
+		#after-banner-software2 h2 a
+		{
+			color: inherit;
+			text-decoration: none;
+			-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-o-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		}
+		
+		#after-banner-software2 h2 a:hover
+		{
+			color: rgba(255,255,255,0.5);
+			border-bottom-color: transparent;
+		}
+		
+		#after-banner-software2 p
+		
+		{
+			text-align: justify;
+		}
+		
+/*********************************************************************************/
+/* After Banner Software                                                         */
+/*********************************************************************************/
+
+	#after-banner-software3
+	{
+		position: relative;
+		background-image: url('../images/dashboard.png');
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+		color: #fff;
+		text-align: center;
+		padding: 2.5em 0 2em 0;
+		cursor: default;
+	}
+
+		.homepage #after-banner-software3
+		{
+			padding: 4em 0 6.5em 0;
+		}
+	
+			.homepage #after-banner-software3 .overlay
+			{
+				content: '';
+				background: #1C0920;
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				opacity: 1.0;
+				-moz-transition: opacity 2s ease-in-out;
+				-webkit-transition: opacity 2s ease-in-out;
+				-o-transition: opacity 2s ease-in-out;
+				-ms-transition: opacity 2s ease-in-out;
+				transition: opacity 2s ease-in-out;
+			}
+		
+			.homepage #after-banner-software3.ready .overlay
+			{
+				opacity: 0;
+			}
+
+		#after-banner-software3 .inner
+		{
+			position: relative;
+			z-index: 1;
+			margin: 0;
+			padding: 4em 8em 0em 8em;
+		}
+		
+		#after-banner-software3 footer
+		{
+			margin: 1em 0 0 0;
+		}
+		
+		#after-banner-software3 h2
+		{
+			color: #fff;
+			font-size: 3em;
+			line-height: 1em;
+		}
+		
+		#after-banner-software3 h2 strong
+		{
+			font-weight: 400;
+			color: #fff;
+		}
+		
+		#after-banner-software3 h2 a
+		{
+			color: inherit;
+			text-decoration: none;
+			-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-o-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		}
+		
+		#after-banner-software3 h2 a:hover
+		{
+			color: rgba(255,255,255,0.5);
+			border-bottom-color: transparent;
+		}
+		
+		#after-banner-software3 p
+		
+		{
+			text-align: justify;
+		}
+		
+/*********************************************************************************/
+/* After Banner Software                                                         */
+/*********************************************************************************/
+
+	#after-banner-software4
+	{
+		position: relative;
+		background-image: url('../images/muse.png');
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+		color: #fff;
+		text-align: center;
+		padding: 2.5em 0 2em 0;
+		cursor: default;
+	}
+
+		.homepage #after-banner-software4
+		{
+			padding: 4em 0 6.5em 0;
+		}
+	
+			.homepage #after-banner-software4 .overlay
+			{
+				content: '';
+				background: #1C0920;
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				opacity: 1.0;
+				-moz-transition: opacity 2s ease-in-out;
+				-webkit-transition: opacity 2s ease-in-out;
+				-o-transition: opacity 2s ease-in-out;
+				-ms-transition: opacity 2s ease-in-out;
+				transition: opacity 2s ease-in-out;
+			}
+		
+			.homepage #after-banner-software4.ready .overlay
+			{
+				opacity: 0;
+			}
+
+		#after-banner-software4 .inner
+		{
+			position: relative;
+			z-index: 1;
+			margin: 0;
+			padding: 4em 8em 0em 8em;
+		}
+		
+		#after-banner-software4 footer
+		{
+			margin: 1em 0 0 0;
+		}
+		
+		#after-banner-software4 h2
+		{
+			color: #fff;
+			font-size: 3em;
+			line-height: 1em;
+		}
+		
+		#after-banner-software4 h2 strong
+		{
+			font-weight: 400;
+			color: #fff;
+		}
+		
+		#after-banner-software4 h2 a
+		{
+			color: inherit;
+			text-decoration: none;
+			-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-o-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		}
+		
+		#after-banner-software4 h2 a:hover
+		{
+			color: rgba(255,255,255,0.5);
+			border-bottom-color: transparent;
+		}
+		
+		#after-banner-software4 p
+		
+		{
+			text-align: justify;
+		}
+
+/*********************************************************************************/
+/* After Banner Software                                                         */
+/*********************************************************************************/
+
+	#after-banner-software5
+	{
+		position: relative;
+		background-image: url('../images/header_2.png');
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+		color: #fff;
+		text-align: center;
+		padding: 2.5em 0 2em 0;
+		cursor: default;
+	}
+
+		.homepage #after-banner-software5
+		{
+			padding: 4em 0 6.5em 0;
+		}
+	
+			.homepage #after-banner-software5 .overlay
+			{
+				content: '';
+				background: #1C0920;
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				opacity: 1.0;
+				-moz-transition: opacity 2s ease-in-out;
+				-webkit-transition: opacity 2s ease-in-out;
+				-o-transition: opacity 2s ease-in-out;
+				-ms-transition: opacity 2s ease-in-out;
+				transition: opacity 2s ease-in-out;
+			}
+		
+			.homepage #after-banner-software5.ready .overlay
+			{
+				opacity: 0;
+			}
+
+		#after-banner-software5 .inner
+		{
+			position: relative;
+			z-index: 1;
+			margin: 0;
+			padding: 4em 8em 0em 8em;
+		}
+		
+		#after-banner-software5 footer
+		{
+			margin: 1em 0 0 0;
+		}
+		
+		#after-banner-software5 h2
+		{
+			color: #fff;
+			font-size: 3em;
+			line-height: 1em;
+		}
+		
+		#after-banner-software5 h2 strong
+		{
+			font-weight: 400;
+			color: #fff;
+		}
+		
+		#after-banner-software5 h2 a
+		{
+			color: inherit;
+			text-decoration: none;
+			-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-o-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		}
+		
+		#after-banner-software5 h2 a:hover
+		{
+			color: rgba(255,255,255,0.5);
+			border-bottom-color: transparent;
+		}
+		
+		#after-banner-software5 p
+		
+		{
+			text-align: justify;
+		}
+		
+/*********************************************************************************/
+/* After Banner Software                                                         */
+/*********************************************************************************/
+
+	#after-banner-software6
+	{
+		position: relative;
+		background-image: url('../images/nitrux.png');
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+		color: #fff;
+		text-align: center;
+		padding: 2.5em 0 2em 0;
+		cursor: default;
+	}
+
+		.homepage #after-banner-software6
+		{
+			padding: 4em 0 6.5em 0;
+		}
+	
+			.homepage #after-banner-software6 .overlay
+			{
+				content: '';
+				background: #1C0920;
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				opacity: 1.0;
+				-moz-transition: opacity 2s ease-in-out;
+				-webkit-transition: opacity 2s ease-in-out;
+				-o-transition: opacity 2s ease-in-out;
+				-ms-transition: opacity 2s ease-in-out;
+				transition: opacity 2s ease-in-out;
+			}
+		
+			.homepage #after-banner-software6.ready .overlay
+			{
+				opacity: 0;
+			}
+
+		#after-banner-software6 .inner
+		{
+			position: relative;
+			z-index: 1;
+			margin: 0;
+			padding: 4em 8em 0em 8em;
+		}
+		
+		#after-banner-software6 footer
+		{
+			margin: 1em 0 0 0;
+		}
+		
+		#after-banner-software6 h2
+		{
+			color: #fff;
+			font-size: 3em;
+			line-height: 1em;
+		}
+		
+		#after-banner-software6 h2 strong
+		{
+			font-weight: 400;
+			color: #fff;
+		}
+		
+		#after-banner-software6 h2 a
+		{
+			color: inherit;
+			text-decoration: none;
+			-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-o-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		}
+		
+		#after-banner-software6 h2 a:hover
+		{
+			color: rgba(255,255,255,0.5);
+			border-bottom-color: transparent;
+		}
+		
+		#after-banner-software6 p
+		
+		{
+			text-align: justify;
+		}
+
+/*********************************************************************************/
+/* After Banner Software                                                         */
+/*********************************************************************************/
+
+	#after-banner-software7
+	{
+		position: relative;
+		background-image: url('../images/nitrux.png');
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+		color: #fff;
+		text-align: center;
+		padding: 2.5em 0 2em 0;
+		cursor: default;
+	}
+
+		.homepage #after-banner-software7
+		{
+			padding: 4em 0 6.5em 0;
+		}
+	
+			.homepage #after-banner-software7 .overlay
+			{
+				content: '';
+				background: #1C0920;
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				opacity: 1.0;
+				-moz-transition: opacity 2s ease-in-out;
+				-webkit-transition: opacity 2s ease-in-out;
+				-o-transition: opacity 2s ease-in-out;
+				-ms-transition: opacity 2s ease-in-out;
+				transition: opacity 2s ease-in-out;
+			}
+		
+			.homepage #after-banner-software7.ready .overlay
+			{
+				opacity: 0;
+			}
+
+		#after-banner-software7 .inner
+		{
+			position: relative;
+			z-index: 1;
+			margin: 0;
+			padding: 4em 8em 0em 8em;
+		}
+		
+		#after-banner-software7 footer
+		{
+			margin: 1em 0 0 0;
+		}
+		
+		#after-banner-software7 h2
+		{
+			color: #fff;
+			font-size: 3em;
+			line-height: 1em;
+		}
+		
+		#after-banner-software7 h2 strong
+		{
+			font-weight: 400;
+			color: #fff;
+		}
+		
+		#after-banner-software7 h2 a
+		{
+			color: inherit;
+			text-decoration: none;
+			-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-o-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		}
+		
+		#after-banner-software7 h2 a:hover
+		{
+			color: rgba(255,255,255,0.5);
+			border-bottom-color: transparent;
+		}
+		
+		#after-banner-software7 p
+		
+		{
+			text-align: justify;
+		}
+		
+/*********************************************************************************/
+/* After Banner Software                                                         */
+/*********************************************************************************/
+
+	#after-banner-software8
+	{
+		position: relative;
+		background: #465660;
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+		color: #fff;
+		text-align: center;
+		padding: 2.5em 0 2em 0;
+		cursor: default;
+	}
+
+		.homepage #after-banner-software8
+		{
+			padding: 4em 0 6.5em 0;
+		}
+	
+			.homepage #after-banner-software8 .overlay
+			{
+				content: '';
+				background: #1C0920;
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				opacity: 1.0;
+				-moz-transition: opacity 2s ease-in-out;
+				-webkit-transition: opacity 2s ease-in-out;
+				-o-transition: opacity 2s ease-in-out;
+				-ms-transition: opacity 2s ease-in-out;
+				transition: opacity 2s ease-in-out;
+			}
+		
+			.homepage #after-banner-software8.ready .overlay
+			{
+				opacity: 0;
+			}
+
+		#after-banner-software8 .inner
+		{
+			position: relative;
+			z-index: 1;
+			margin: 0;
+			padding: 4em 8em 0em 8em;
+		}
+		
+		#after-banner-software8 footer
+		{
+			margin: 1em 0 0 0;
+		}
+		
+		#after-banner-software8 h2
+		{
+			color: #fff;
+			font-size: 3em;
+			line-height: 1em;
+		}
+		
+		#after-banner-software8 h2 strong
+		{
+			font-weight: 400;
+			color: #fff;
+		}
+		
+		#after-banner-software8 p strong
+		{
+			font-weight: 400;
+			color: #fff;
+		}
+		
+		#after-banner-software8 h2 a
+		{
+			color: inherit;
+			text-decoration: none;
+			-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-o-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		}
+		
+		#after-banner-software8 h2 a:hover
+		{
+			color: rgba(255,255,255,0.5);
+			border-bottom-color: transparent;
+		}
+		
+		#after-banner-software8 p
+		
+		{
+			text-align: justify;
+		}
+		
+/*********************************************************************************/
+/* After Banner Hardware                                                                  */
+/*********************************************************************************/
+
+	#after-banner-hardware
+	{
+		position: relative;
+		background-image: url('../images/nxq_material.png');
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+		color: #fff;
+		text-align: center;
+		padding: 2.5em 0 2em 0;
+		cursor: default;
+	}
+
+		.homepage #after-banner-hardware
+		{
+			padding: 4em 0 6.5em 0;
+		}
+	
+			.homepage #after-banner-hardware .overlay
+			{
+				content: '';
+				background: #1C0920;
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				opacity: 1.0;
+				-moz-transition: opacity 2s ease-in-out;
+				-webkit-transition: opacity 2s ease-in-out;
+				-o-transition: opacity 2s ease-in-out;
+				-ms-transition: opacity 2s ease-in-out;
+				transition: opacity 2s ease-in-out;
+			}
+		
+			.homepage #after-banner-hardware.ready .overlay
+			{
+				opacity: 0;
+			}
+
+		#after-banner-hardware .inner
+		{
+			position: relative;
+			z-index: 1;
+			margin: 0;
+			padding: 4em 8em 0em 8em;
+		}
+		
+		#after-banner-hardware footer
+		{
+			margin: 1em 0 0 0;
+		}
+		
+		#after-banner-hardware h2
+		{
+			color: #fff;
+			font-size: 3em;
+			line-height: 1em;
+		}
+		
+		#after-banner-hardware h2 strong
+		{
+			font-weight: 400;
+			color: #fff;
+		}
+		
+		#after-banner-hardware p strong
+		{
+			font-weight: 400;
+			color: #fff;
+		}
+		
+		#after-banner-hardware h2 a
+		{
+			color: inherit;
+			text-decoration: none;
+			-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-o-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		}
+		
+		#after-banner-hardware h2 a:hover
+		{
+			color: rgba(255,255,255,0.5);
+			border-bottom-color: transparent;
+		}
+		
+		#after-banner-hardware p
+		
+		{
+			text-align: justify;
+		}
+/*********************************************************************************/
+/* After Banner Hardware                                                                  */
+/*********************************************************************************/
+
+	#after-banner-hardware2
+	{
+		position: relative;
+		background-image: url('../images/nxq_1.png');
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+		color: #fff;
+		text-align: center;
+		padding: 2.5em 0 2em 0;
+		cursor: default;
+	}
+
+		.homepage #after-banner-hardware2
+		{
+			padding: 4em 0 6.5em 0;
+		}
+	
+			.homepage #after-banner-hardware2 .overlay
+			{
+				content: '';
+				background: #1C0920;
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				opacity: 1.0;
+				-moz-transition: opacity 2s ease-in-out;
+				-webkit-transition: opacity 2s ease-in-out;
+				-o-transition: opacity 2s ease-in-out;
+				-ms-transition: opacity 2s ease-in-out;
+				transition: opacity 2s ease-in-out;
+			}
+		
+			.homepage #after-banner-hardware2.ready .overlay
+			{
+				opacity: 0;
+			}
+
+		#after-banner-hardware2 .inner
+		{
+			position: relative;
+			z-index: 1;
+			margin: 0;
+			padding: 4em 8em 0em 8em;
+		}
+		
+		#after-banner-hardware2 footer
+		{
+			margin: 1em 0 0 0;
+		}
+		
+		#after-banner-hardware2 h2
+		{
+			color: #fff;
+			font-size: 3em;
+			line-height: 1em;
+		}
+		
+		#after-banner-hardware2 h2 strong
+		{
+			font-weight: 400;
+			color: #fff;
+		}
+		
+		#after-banner-hardware2 p strong
+		{
+			font-weight: 400;
+			color: #fff;
+		}
+		
+		#after-banner-hardware2 h2 a
+		{
+			color: inherit;
+			text-decoration: none;
+			-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-o-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		}
+		
+		#after-banner-hardware2 h2 a:hover
+		{
+			color: rgba(255,255,255,0.5);
+			border-bottom-color: transparent;
+		}
+		
+		#after-banner-hardware2 p
+		
+		{
+			text-align: justify;
+		}
+		
+/*********************************************************************************/
+/* After Banner Hardware                                                                  */
+/*********************************************************************************/
+
+	#after-banner-hardware3
+	{
+		position: relative;
+		background-image: url('../images/nxq_2.png');
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+		color: #fff;
+		text-align: center;
+		padding: 2.5em 0 2em 0;
+		cursor: default;
+	}
+
+		.homepage #after-banner-hardware3
+		{
+			padding: 4em 0 6.5em 0;
+		}
+	
+			.homepage #after-banner-hardware3 .overlay
+			{
+				content: '';
+				background: #1C0920;
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				opacity: 1.0;
+				-moz-transition: opacity 2s ease-in-out;
+				-webkit-transition: opacity 2s ease-in-out;
+				-o-transition: opacity 2s ease-in-out;
+				-ms-transition: opacity 2s ease-in-out;
+				transition: opacity 2s ease-in-out;
+			}
+		
+			.homepage #after-banner-hardware3.ready .overlay
+			{
+				opacity: 0;
+			}
+
+		#after-banner-hardware3 .inner
+		{
+			position: relative;
+			z-index: 1;
+			margin: 0;
+			padding: 4em 8em 0em 8em;
+		}
+		
+		#after-banner-hardware3 footer
+		{
+			margin: 1em 0 0 0;
+		}
+		
+		#after-banner-hardware3 h2
+		{
+			color: #fff;
+			font-size: 3em;
+			line-height: 1em;
+		}
+		
+		#after-banner-hardware3 h2 strong
+		{
+			font-weight: 400;
+			color: #fff;
+		}
+		
+		#after-banner-hardware3 p strong
+		{
+			font-weight: 400;
+			color: #fff;
+		}
+		
+		#after-banner-hardware3 h2 a
+		{
+			color: inherit;
+			text-decoration: none;
+			-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-o-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		}
+		
+		#after-banner-hardware3 h2 a:hover
+		{
+			color: rgba(255,255,255,0.5);
+			border-bottom-color: transparent;
+		}
+		
+		#after-banner-hardware3 p
+		
+		{
+			text-align: justify;
+		}
+		
+/*********************************************************************************/
+/* After Banner Hardware                                                                  */
+/*********************************************************************************/
+
+	#after-banner-hardware4
+	{
+		position: relative;
+		background-image: url('../images/nxq_3.png');
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+		color: #fff;
+		text-align: center;
+		padding: 2.5em 0 2em 0;
+		cursor: default;
+	}
+
+		.homepage #after-banner-hardware4
+		{
+			padding: 4em 0 6.5em 0;
+		}
+	
+			.homepage #after-banner-hardware4 .overlay
+			{
+				content: '';
+				background: #1C0920;
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				opacity: 1.0;
+				-moz-transition: opacity 2s ease-in-out;
+				-webkit-transition: opacity 2s ease-in-out;
+				-o-transition: opacity 2s ease-in-out;
+				-ms-transition: opacity 2s ease-in-out;
+				transition: opacity 2s ease-in-out;
+			}
+		
+			.homepage #after-banner-hardware4.ready .overlay
+			{
+				opacity: 0;
+			}
+
+		#after-banner-hardware4 .inner
+		{
+			position: relative;
+			z-index: 1;
+			margin: 0;
+			padding: 4em 8em 0em 8em;
+		}
+		
+		#after-banner-hardware4 footer
+		{
+			margin: 1em 0 0 0;
+		}
+		
+		#after-banner-hardware4 h2
+		{
+			color: #fff;
+			font-size: 3em;
+			line-height: 1em;
+		}
+		
+		#after-banner-hardware4 h2 strong
+		{
+			font-weight: 400;
+			color: #fff;
+		}
+		
+		#after-banner-hardware4 p strong
+		{
+			font-weight: 400;
+			color: #fff;
+		}
+		
+		#after-banner-hardware4 h2 a
+		{
+			color: inherit;
+			text-decoration: none;
+			-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-o-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		}
+		
+		#after-banner-hardware4 h2 a:hover
+		{
+			color: rgba(255,255,255,0.5);
+			border-bottom-color: transparent;
+		}
+		
+		#after-banner-hardware4 p
+		
+		{
+			text-align: justify;
+		}
+		
+/*********************************************************************************/
+/* After Banner Company                                                                  */
+/*********************************************************************************/
+
+	#after-banner-company
+	{
+		position: relative;
+		background-image: url('../images/header.png');
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+		color: #fff;
+		text-align: center;
+		padding: 2.5em 0 2em 0;
+		cursor: default;
+	}
+
+		.homepage #after-banner-company
+		{
+			padding: 4em 0 6.5em 0;
+		}
+	
+			.homepage #after-banner-company .overlay
+			{
+				content: '';
+				background: #1C0920;
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				opacity: 1.0;
+				-moz-transition: opacity 2s ease-in-out;
+				-webkit-transition: opacity 2s ease-in-out;
+				-o-transition: opacity 2s ease-in-out;
+				-ms-transition: opacity 2s ease-in-out;
+				transition: opacity 2s ease-in-out;
+			}
+		
+			.homepage #after-banner-company.ready .overlay
+			{
+				opacity: 0;
+			}
+
+		#after-banner-company .inner
+		{
+			position: relative;
+			z-index: 1;
+			margin: 0;
+			padding: 4em 8em 0em 8em;
+		}
+		
+		#after-banner-company footer
+		{
+			margin: 1em 0 0 0;
+		}
+		
+		#after-banner-company h2
+		{
+			color: #fff;
+			font-size: 3em;
+			line-height: 1em;
+		}
+		
+		#after-banner-company h2 strong
+		{
+			font-weight: 400;
+			color: #fff;
+		}
+		
+		#after-banner-company p strong
+		{
+			font-weight: 400;
+			color: #fff;
+		}
+		
+		#after-banner-company h2 a
+		{
+			color: inherit;
+			text-decoration: none;
+			-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-o-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		}
+		
+		#after-banner-company h2 a:hover
+		{
+			color: rgba(255,255,255,0.5);
+			border-bottom-color: transparent;
+		}
+		
+		#after-banner-company p
+		
+		{
+			text-align: justify;
+		}
+		
+/*********************************************************************************/
+/* After Banner Company                                                          */
+/*********************************************************************************/
+
+	#after-banner-company2
+	{
+		position: relative;
+		background-image: url('../images/company.png');
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+		color: #fff;
+		text-align: center;
+		padding: 2.5em 0 2em 0;
+		cursor: default;
+	}
+
+		.homepage #after-banner-company2
+		{
+			padding: 4em 0 6.5em 0;
+		}
+	
+			.homepage #after-banner-company2 .overlay
+			{
+				content: '';
+				background: #1C0920;
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				opacity: 1.0;
+				-moz-transition: opacity 2s ease-in-out;
+				-webkit-transition: opacity 2s ease-in-out;
+				-o-transition: opacity 2s ease-in-out;
+				-ms-transition: opacity 2s ease-in-out;
+				transition: opacity 2s ease-in-out;
+			}
+		
+			.homepage #after-banner-company2.ready .overlay
+			{
+				opacity: 0;
+			}
+
+		#after-banner-company2 .inner
+		{
+			position: relative;
+			z-index: 1;
+			margin: 0;
+			padding: 4em 8em 0em 8em;
+		}
+		
+		#after-banner-company2 footer
+		{
+			margin: 1em 0 0 0;
+		}
+		
+		#after-banner-company2 h2
+		{
+			color: #fff;
+			font-size: 3em;
+			line-height: 1em;
+		}
+		
+		#after-banner-company2 h2 strong
+		{
+			font-weight: 400;
+			color: #fff;
+		}
+		
+		#after-banner-company2 p strong
+		{
+			font-weight: 400;
+			color: #fff;
+		}
+		
+		#after-banner-company2 h2 a
+		{
+			color: inherit;
+			text-decoration: none;
+			-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-o-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		}
+		
+		#after-banner-company2 h2 a:hover
+		{
+			color: rgba(255,255,255,0.5);
+			border-bottom-color: transparent;
+		}
+		
+		#after-banner-company2 p
+		
+		{
+			text-align: justify;
+			color: #777;
+		}
+		
+		
+/*********************************************************************************/
+/* After Banner Team                                                                  */
+/*********************************************************************************/
+
+	#after-banner-team
+	{
+		position: relative;
+		background-image: url('../images/header_2.png');
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+		color: #fff;
+		text-align: center;
+		padding: 2.5em 0 2em 0;
+		cursor: default;
+	}
+
+		.homepage #after-banner-team
+		{
+			padding: 4em 0 6.5em 0;
+		}
+	
+			.homepage #after-banner-team .overlay
+			{
+				content: '';
+				background: #1C0920;
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				opacity: 1.0;
+				-moz-transition: opacity 2s ease-in-out;
+				-webkit-transition: opacity 2s ease-in-out;
+				-o-transition: opacity 2s ease-in-out;
+				-ms-transition: opacity 2s ease-in-out;
+				transition: opacity 2s ease-in-out;
+			}
+		
+			.homepage #after-banner-team.ready .overlay
+			{
+				opacity: 0;
+			}
+
+		#after-banner-team .inner
+		{
+			position: relative;
+			z-index: 1;
+			margin: 0;
+			padding: 4em 8em 0em 8em;
+		}
+		
+		#after-banner-team footer
+		{
+			margin: 1em 0 0 0;
+		}
+		
+		#after-banner-team h2
+		{
+			color: #fff;
+			font-size: 3em;
+			line-height: 1em;
+		}
+		
+		#after-banner-team h2 strong
+		{
+			font-weight: 400;
+			color: #fff;
+		}
+		
+		#after-banner-team p strong
+		{
+			font-weight: 400;
+			color: #fff;
+		}
+		
+		#after-banner-team h2 a
+		{
+			color: inherit;
+			text-decoration: none;
+			-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-o-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		}
+		
+		#after-banner-team h2 a:hover
+		{
+			color: rgba(255,255,255,0.5);
+			border-bottom-color: transparent;
+		}
+		
+		#after-banner-team p
+		
+		{
+			text-align: justify;
+		}
+		
+/*********************************************************************************/
+/* After Banner Team                                                                  */
+/*********************************************************************************/
+
+	#after-banner-team2
+	{
+		position: relative;
+		background-image: url('../images/company_2.png');
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+		color: #fff;
+		text-align: center;
+		padding: 2.5em 0 2em 0;
+		cursor: default;
+	}
+
+		.homepage #after-banner-team2
+		{
+			padding: 4em 0 6.5em 0;
+		}
+	
+			.homepage #after-banner-team2 .overlay
+			{
+				content: '';
+				background: #1C0920;
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				opacity: 1.0;
+				-moz-transition: opacity 2s ease-in-out;
+				-webkit-transition: opacity 2s ease-in-out;
+				-o-transition: opacity 2s ease-in-out;
+				-ms-transition: opacity 2s ease-in-out;
+				transition: opacity 2s ease-in-out;
+			}
+		
+			.homepage #after-banner-team2.ready .overlay
+			{
+				opacity: 0;
+			}
+
+		#after-banner-team2 .inner
+		{
+			position: relative;
+			z-index: 1;
+			margin: 0;
+			padding: 4em 8em 0em 5.5em;
+		}
+		
+		#after-banner-team2 footer
+		{
+			margin: 1em 0 0 0;
+		}
+		
+		#after-banner-team2 h2
+		{
+			color: #fff;
+			font-size: 3em;
+			line-height: 1em;
+		}
+		
+		#after-banner-team2 h2 strong
+		{
+			font-weight: 400;
+			color: #fff;
+		}
+		
+		#after-banner-team2 p strong
+		{
+			font-weight: 400;
+			color: #fff;
+		}
+		
+		#after-banner-team2 h2 a
+		{
+			color: inherit;
+			text-decoration: none;
+			-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-o-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		}
+		
+		#after-banner-team2 h2 a:hover
+		{
+			color: rgba(255,255,255,0.5);
+			border-bottom-color: transparent;
+		}
+		
+		#after-banner-team2 p
+		
+		{
+			text-align: justify;
+		}
+
+/*********************************************************************************/
+/* Featured Software                                                             */
+/*********************************************************************************/
+	
+	#featured-software
+	{
+		position: relative;
+		background: #fff;
+		text-align: center;
+		padding: 6em 0em 6em 0em;
+	}
+	
+	#featured-software h3
+	{
+		display: block;
+		font-weight: 300;
+	}
+
+	#featured-software .pennant
+	{
+		font-size: 4em;
+	}
+	
+	#featured-software .button
+	{
+		margin-top: 1.5em;
+	}
+	
+	#featured-software p
+	{
+		text-align: center;
+	}
+	
+/*********************************************************************************/
+/* Featured Company                                                              */
+/*********************************************************************************/
+	
+	#featured-company
+	{
+		position: relative;
+		background: #fff;
+		text-align: center;
+		padding: 6em 0em 6em 0em;
+	}
+	
+	#featured-company h3
+	{
+		display: block;
+		font-weight: 300;
+	}
+
+	#featured-company .pennant
+	{
+		font-size: 4em;
+	}
+	
+	#featured-company .button
+	{
+		margin-top: 1.5em;
+		padding: 1.10em 3em 1.10em 3em;
+		box-shadow: inset 0 0 0 1px #e6e6e6;
+		background: none;
+		color: #777;
+	}
+	
+		#featured-company .button:hover
+		{
+			background: rgba(0,0,0,0.025);
+		}
+	
+	#featured-company p
+	{
+		text-align: center;
+	}
+
+/*********************************************************************************/
+/* Featured Hardware                                                             */
+/*********************************************************************************/
+	
+	#featured-hardware
+	{
+		position: relative;
+		background: #fff;
+		text-align: center;
+		padding: 6em 0em 6em 0em;
+	}
+	
+	#featured-hardware h3
+	{
+		display: block;
+		font-weight: 300;
+	}
+
+	#featured-hardware .pennant
+	{
+		font-size: 4em;
+	}
+	
+	#featured-hardware .button
+	{
+		margin-top: 1.5em;
+	}
+	
+	#featured-hardware p
+	{
+		text-align: center;
+	}
+
+/*********************************************************************************/
+/* Featured Hardware 2nd row                                                     */
+/*********************************************************************************/
+	
+	#featured-hardware2
+	{
+		position: relative;
+		background: #fff;
+		text-align: center;
+		padding: 2em 0em 6em 0em;
+	}
+	
+	#featured-hardware2 h3
+	{
+		display: block;
+		font-weight: 300;
+	}
+
+	#featured-hardware2 .pennant
+	{
+		font-size: 4em;
+	}
+	
+	#featured-hardware2 .button
+	{
+		margin-top: 1.5em;
+	}
+	
+	#featured-hardware2 p
+	{
+		text-align: center;
+	}
+	
+/*********************************************************************************/
+/* Features                                                                      */
+/*********************************************************************************/
+	
+	#features
+	{
+		position: relative;
+		text-align: center;
+		padding: 12em 0em 0em 0em;
+	}
+	
+	#features h3
+	{
+		display: block;
+		font-weight: 300;
+		color: #fff;
+	}
+
+	#features .pennant
+	{
+		font-size: 4em;
+	}
+	
+	#features .button
+	{
+		margin-top: 1.5em;
+	}
+	
+	#features p
+	{
+		text-align: center;
+	}
+
+/*********************************************************************************/
+/* Team                                                                      */
+/*********************************************************************************/
+	
+	#team
+	{
+		position: relative;
+		text-align: center;
+		padding: 3em 0em 0em 0em;
+	}
+	
+	#team h3
+	{
+		display: block;
+		font-weight: 300;
+		color: #777;
+	}
+
+	#team .pennant
+	{
+		font-size: 4em;
+	}
+	
+	#team .button
+	{
+		margin-top: 1.5em;
+		font-size: 1em;
+		color: #777;
+	}
+		#team .button:hover
+		{
+			color: #fff;
+		}
+	
+	#team p
+	{
+		text-align: center;
+		color: #777;
+	}
+	
+/*********************************************************************************/
+/* Team2                                                                         */
+/*********************************************************************************/
+	
+	#team2
+	{
+		position: relative;
+		text-align: center;
+		padding: 8em 0em 0em 0em;
+	}
+	
+	#team2 h3
+	{
+		display: block;
+		font-weight: 300;
+		color: #777;
+	}
+
+	#team2 .pennant
+	{
+		font-size: 4em;
+	}
+	
+	#team2 .button
+	{
+		margin-top: 1.5em;
+		font-size: 1em;
+		color: #777;
+	}
+		#team2 .button:hover
+		{
+			color: #fff;
+		}
+	
+	#team2 p
+	{
+		text-align: center;
+		color: #777;
+	}
+
+/*********************************************************************************/
+/* Team3                                                                         */
+/*********************************************************************************/
+	
+	#team3
+	{
+		position: relative;
+		text-align: center;
+		padding: 8em 0em 4em 0em;
+	}
+	
+	#team3 h3
+	{
+		display: block;
+		font-weight: 300;
+		color: #777;
+	}
+
+	#team3 .pennant
+	{
+		font-size: 4em;
+	}
+	
+	#team3 .button
+	{
+		margin-top: 1.5em;
+		font-size: 1em;
+		color: #777;
+	}
+		#team3 .button:hover
+		{
+			color: #fff;
+		}
+	
+	#team3 p
+	{
+		text-align: center;
+		color: #777;
+	}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Circular images
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+	.img-circle {
+	  border-radius: 50%;
+	}
+	
+/*********************************************************************************/
+/* After Banner Partners                                                         */
+/*********************************************************************************/
+
+	#after-banner-partners
+	{
+		position: relative;
+		background-image: url('../images/header.png');
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+		color: #fff;
+		text-align: center;
+		padding: 2.5em 0 2em 0;
+		cursor: default;
+	}
+
+		.homepage #after-banner-partners
+		{
+			padding: 4em 0 6.5em 0;
+		}
+	
+			.homepage #after-banner-partners .overlay
+			{
+				content: '';
+				background: #1C0920;
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				opacity: 1.0;
+				-moz-transition: opacity 2s ease-in-out;
+				-webkit-transition: opacity 2s ease-in-out;
+				-o-transition: opacity 2s ease-in-out;
+				-ms-transition: opacity 2s ease-in-out;
+				transition: opacity 2s ease-in-out;
+			}
+		
+			.homepage #after-banner-partners.ready .overlay
+			{
+				opacity: 0;
+			}
+
+		#after-banner-partners .inner
+		{
+			position: relative;
+			z-index: 1;
+			margin: 0;
+			padding: 4em 8em 0em 8em;
+		}
+		
+		#after-banner-partners footer
+		{
+			margin: 1em 0 0 0;
+		}
+		
+		#after-banner-partners h2
+		{
+			color: #fff;
+			font-size: 3em;
+			line-height: 1em;
+		}
+		
+		#after-banner-partners h2 strong
+		{
+			font-weight: 400;
+			color: #fff;
+		}
+		
+		#after-banner-partners p strong
+		{
+			font-weight: 400;
+			color: #fff;
+		}
+		
+		#after-banner-partners h2 a
+		{
+			color: inherit;
+			text-decoration: none;
+			-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-o-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		}
+		
+		#after-banner-partners h2 a:hover
+		{
+			color: rgba(255,255,255,0.5);
+			border-bottom-color: transparent;
+		}
+		
+		#after-banner-partners p
+		
+		{
+			text-align: justify;
+		}
+	
+/*********************************************************************************/
+/* After Banner Partners                                                         */
+/*********************************************************************************/
+
+	#partners
+	{
+		position: relative;
+		background-image: url('../images/partners.png');
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+		color: #777;
+		text-align: center;
+		padding: 2.5em 0 2em 0;
+		cursor: default;
+	}
+
+		.homepage #partners
+		{
+			padding: 4em 0 6.5em 0;
+		}
+	
+			.homepage #partners .overlay
+			{
+				content: '';
+				background: #1C0920;
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				opacity: 1.0;
+				-moz-transition: opacity 2s ease-in-out;
+				-webkit-transition: opacity 2s ease-in-out;
+				-o-transition: opacity 2s ease-in-out;
+				-ms-transition: opacity 2s ease-in-out;
+				transition: opacity 2s ease-in-out;
+			}
+		
+			.homepage #partners.ready .overlay
+			{
+				opacity: 0;
+			}
+
+		#partners .inner
+		{
+			position: relative;
+			z-index: 1;
+			margin: 0;
+			padding: 4em 8em 0em 5.5em;
+		}
+		
+		#partners footer
+		{
+			margin: 1em 0 0 0;
+		}
+		
+		#partners h2
+		{
+			color: #fff;
+			font-size: 3em;
+			line-height: 1em;
+		}
+		
+		#partners h2 strong
+		{
+			font-weight: 400;
+			color: #fff;
+		}
+		
+		#partners p strong
+		{
+			font-weight: 400;
+			color: #fff;
+		}
+		
+		#partners h2 a
+		{
+			color: inherit;
+			text-decoration: none;
+			-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-o-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		}
+		
+		#partners h2 a:hover
+		{
+			color: rgba(255,255,255,0.5);
+			border-bottom-color: transparent;
+		}
+		
+		#partners p
+		
+		{
+			text-align: justify;
+		}
+		
+/*********************************************************************************/
+/* After Banner Partners                                                         */
+/*********************************************************************************/
+
+	#partners2
+	{
+		position: relative;
+		text-align: center;
+		padding: 3em 0em 4em 0em;
+	}
+	
+	#partners2 h3
+	{
+		display: block;
+		font-weight: 300;
+		color: #777;
+	}
+
+	#partners2 .pennant
+	{
+		font-size: 4em;
+	}
+	
+	#partners2 .button
+	{
+		margin-top: 1.5em;
+		font-size: 1em;
+		color: #777;
+	}
+		#partners2 .button:hover
+		{
+			color: #fff;
+		}
+	
+	#partners2 p
+	{
+		text-align: center;
+		color: #777;
+	}
+	
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Fading transition
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+	.fade {
+		opacity: 1;
+		transition: opacity .25s ease-in-out;
+		-moz-transition: opacity .25s ease-in-out;
+		-webkit-transition: opacity .25s ease-in-out;
+		}
+
+	.fade:hover {
+		opacity: 0.5;
+		}
+		
+/*********************************************************************************/
+/* Press Kit                                                                     */
+/*********************************************************************************/
+	
+	#press-kit
+	{
+		position: relative;
+		background-image: url('../images/company.png');
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+		color: #777;
+		text-align: center;
+		padding: 0em 0 2em 0;
+		cursor: default;
+	}
+
+		.homepage #press-kit
+		{
+			padding: 0em 0 10em 0;
+		}
+	
+			.homepage #press-kit .overlay
+			{
+				content: '';
+				background: #1C0920;
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				opacity: 1.0;
+				-moz-transition: opacity 2s ease-in-out;
+				-webkit-transition: opacity 2s ease-in-out;
+				-o-transition: opacity 2s ease-in-out;
+				-ms-transition: opacity 2s ease-in-out;
+				transition: opacity 2s ease-in-out;
+			}
+		
+			.homepage #press-kit.ready .overlay
+			{
+				opacity: 0;
+			}
+
+		#press-kit .inner
+		{
+			position: relative;
+			z-index: 1;
+			margin: 0;
+			padding: 4em 8em 0em 8em;
+		}
+		
+		#press-kit footer
+		{
+			margin: 1em 0 0 0;
+		}
+		
+		#press-kit h2
+		{
+			color: #777;
+			font-size: 3em;
+			line-height: 1em;
+		}
+		
+		#press-kit h2 strong
+		{
+			font-weight: 400;
+			color: #777;
+		}
+		
+		#press-kit p strong
+		{
+			font-weight: 400;
+			color: #777;
+		}
+		
+		#press-kit h2 a
+		{
+			color: inherit;
+			text-decoration: none;
+			-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-o-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+			transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+		}
+		
+		#press-kit h2 a:hover
+		{
+			color: rgba(119,119,119,0.5);
+			border-bottom-color: transparent;
+		}
+		
+		#press-kit p
+		
+		{
+			text-align: justify;
+		}
+		
+		#press-kit .button.download
+		{
+			margin-top: 1.5em;
+			box-shadow: inset 0 0 0 1px #b3b3b3;
+			background: none;
+			color: #777;
+		}
+		
+		#press-kit .button.download:hover
+		{
+			background: rgba(39,174,96,1.0);
+			color: #fff;
+		}
