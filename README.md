@@ -8,7 +8,7 @@ This repository holds the sources for the Nitrux web-site. No content such as ic
 License
 ==============
 
-Below we provide a definition and use for the different pieces that this web-site is comprised, and the licenses that this web-site use.
+Below we provide a definition for the different pieces that comprise this web-site and the licenses that these elements use.
 
 * Code - by code it's understood that this is entirely in reference to files that contain HTML, CSS, JS and PHP code. Their content is licensed entirely in the following license:
 
