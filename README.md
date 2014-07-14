@@ -41,6 +41,8 @@ Usage
 
 * By using the sources in this repository you "The User" agree to not claim ownership of the elements marked as **trademarked** by Nitrux S.A. "The Owner" and to not modify or alter them in any way that results harmful to the image, values, brand and name of Nitrux S.A. "The Owner".
 
+* By using the sources in this repository you "The User" agree to contribute back to this website by reporting issues and fixing problems in relation to the **Code** of the website.
+
 * If you "The User" wish to use any of the elements marked as **trademarked** by Nitrux S.A. "The Owner" in your website please contact Nitrux S.A. "The Owner" at *contact@nitrux.in*
 
 
