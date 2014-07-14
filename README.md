@@ -12,7 +12,7 @@ Below we provide a definition and use for the different pieces that this web-sit
 
 * Code - by code it's understood that this is entirely in reference to files that contain HTML, CSS, JS and PHP code. Their content is licensed entirely in the following license:
 
-    * Apache License 2.0: This license covers all **Code** used in this web-site. Code refers to "*written text of which without it the web-site wouldn't work such as: tags, functions, classes, pointers, headers, etc.*". Below is a disclaimer of the trademarked content used in these files.
+    * Apache License 2.0: This license covers all **Code** used in this web-site. Code refers to "*written text of which without it the web-site wouldn't work such as: tags, functions, classes, pointers, headers, etc.*".
 
 * Images - by images it's understood that this is entirely in reference to image files in formats like PNG, SVG and JPG. Their content is licensed entirely in the following license, adaptations of trademarked logos are used under a "Fair Use" policy:
 
