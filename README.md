@@ -35,9 +35,9 @@ Usage
 
 * By using the sources in this repository you agree to follow and make correct use of content that "The Owner" has made available to you "The User".
 
-* By using the sources in this repository you agree to not claim ownership of the elements marked as **trademarked** by Nitrux S.A. and to not modify or alter them in any way.
+* By using the sources in this repository you "The User" agree to not claim ownership of the elements marked as **trademarked** by Nitrux S.A. "The Owner" and to not modify or alter them in any way.
 
-* If you wish to use any of the elements marked as **trademarked** by Nitrux S.A. in your website please contact Nitrux S.A. at *contact@nitrux.in*
+* If you "The User" wish to use any of the elements marked as **trademarked** by Nitrux S.A. "The Owner" in your website please contact Nitrux S.A. "The Owner" at *contact@nitrux.in*
 
 
 *This repository is made public with the intention of teaching, learning and bug fixing.*
