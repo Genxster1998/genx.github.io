@@ -25,7 +25,7 @@ Below we provide a definition and use for the different pieces that this web-sit
     
 * Content - by content it's understood that this is entirely in reference to text, phrases, paragraphs, quotes and personal names. Their content is licensed entirely in the following license, adaptations of trademarked logos are used under a "Fair Use" policy:
 
-    * Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International: This license covers all **Content** as described above: Blog posts, product descriptions, Names, places, quotes, in other words "*written text that is explicitly not part of the web-site Code*".
+    * Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International: This license covers all **Content** as described above: Blog posts, product descriptions, names, places, quotes, in other words "*written text that is explicitly not part of the web-site Code*".
 
 * Resources - by resources it's understood that this is entirely in reference to materials not created by Nitrux S.A. such as fonts.
 
