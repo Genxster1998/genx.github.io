@@ -19,11 +19,11 @@ Below we provide a definition and use for the different pieces that this web-sit
         * *The following trademarks belong to their respective    owners: "g+" logo belongs to Google, Inc. "Twitter" logo belongs to Twitter, Inc. The "Numix" logo belongs to Numix Project. The "Perfect Choice" logo belongs to Perfect Choice S.A. de C.V. The "NICON" logo belongs to NiconSystem. The "f" logo belongs to Facebook, Inc. The name "Linux" belongs to Linus Torvalds. The names "KDE" and "Plasma" belong to KDE e.V. The name "Ubuntu" belongs to Canonical, Ltd. The "Octocat" and the name "GitHub" belong to GitHub, Inc. The name "YouTube" belongs to Google, Inc. The "Maui" logo and name belongs to Pier Luigi Fiorini. The "Wrinkle icon suite" name and logo belongs to KotusWorks. The name "Mali" belongs to ARM, Ltd. The name "Samsung" belongs to Samsung Group.*
         * The following trademarks are held in conjuction with 3rd parties (Numix Project): "Ozon", "Ozon OS".
 
-* Images - by images it's understood that this is entirely in reference to image files like PNG, SVG and JPG. Their content is licensed entirely in the following license with the exception of those with a trademark non-owned by Nitrux S.A. as noted in the above section:
+* Images - by images it's understood that this is entirely in reference to image files like PNG, SVG and JPG formats. Their content is licensed entirely in the following license with the exception of those with a trademark non-owned by Nitrux S.A. as noted in the above section, adaptations of trademarked logos are used under the "Fair Use" policy:
 
     * Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International
     
-* Content - by content it's understood that this is entirely in reference to text, phrases, paragraphs, quotes and personal names. Their content is licensed entirely in the following license with the exception of those with a trademark non-owned by Nitrux S.A. as noted in the first section:
+* Content - by content it's understood that this is entirely in reference to text, phrases, paragraphs, quotes and personal names. Their content is licensed entirely in the following license with the exception of those with a trademark non-owned by Nitrux S.A. as noted in the first section adaptations of trademarked logos are used under the "Fair Use" policy:
 
     * Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International
 
