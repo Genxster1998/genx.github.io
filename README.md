@@ -13,10 +13,6 @@ Below we provide a definition and use for the different pieces that this web-sit
 * Code - by code it's understood that this is entirely in reference to files that contain HTML, CSS, JS and PHP code. Their content is licensed entirely in the following license:
 
     * Apache License 2.0: This license covers all **Code** used in this web-site. Code refers to "*written text of which without it the web-site wouldn't work such as: tags, functions, classes, pointers, headers, etc.*". Below is a disclaimer of the trademarked content used in these files.
-    
-        * **The following trademarks are used in these files, these trademarks are a property of Nitrux S.A. The trademarks comprise the following words, phrases stylized or not: "Nitrux", "Nitrux Store", "Nitrux Blog", "Compass",  "Nitrux S.A.", "Nitrux OS", "Typer.IM", "Xperience UI" "NXQ", "NXT", "NXP", "Backd", "Artwork+", "Small computers, big ideas", "All the power, none of the space", "We're a thriving company making dreams come true. One byte at a time".**
-        * *The following trademarks belong to their respective owners: The name "Linux" belongs to Linus Torvalds., The names "KDE" and "Plasma" belong to KDE e.V., The name "Ubuntu" belongs to Canonical, Ltd., The "Octocat" logo and the name "GitHub" belong to GitHub, Inc., The name "YouTube" belongs to Google, Inc., The "Maui" name belongs to Pier Luigi Fiorini., The "Wrinkle icon suite" name belongs to KotusWorks., The name "Mali 400" belongs to ARM, Ltd., The name "Samsung" belongs to the Samsung Group. The name "NiconSystems" belongs to NiconSystems, The name "Facebook belongs to Facebook, Inc., The name "Perfect Choice" belongs to Perfect Choice S.A. de C.V., The name "Qt" belongs to Digia plc.*
-        * *The following trademarks are held in conjuction with 3rd parties (Numix Project): The names "Ozon" and "Ozon OS".*
 
 * Images - by images it's understood that this is entirely in reference to image files in formats like PNG, SVG and JPG. Their content is licensed entirely in the following license, adaptations of trademarked logos are used under a "Fair Use" policy:
 
@@ -27,6 +23,9 @@ Below we provide a definition and use for the different pieces that this web-sit
 * Content - by content it's understood that this is entirely in reference to text, phrases, paragraphs, quotes and personal names. Their content is licensed entirely in the following license, adaptations of trademarked logos are used under a "Fair Use" policy:
 
     * Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International: This license covers all **Content** as used in this web-site. Content refers to "*written text that is explicitly not part of the web-site Code*".
+    * **The following trademarks are used in these files, these trademarks are a property of Nitrux S.A. The trademarks comprise the following words, phrases stylized or not: "Nitrux", "Nitrux Store", "Nitrux Blog", "Compass",  "Nitrux S.A.", "Nitrux OS", "Typer.IM", "Xperience UI" "NXQ", "NXT", "NXP", "Backd", "Artwork+", "Small computers, big ideas", "All the power, none of the space", "We're a thriving company making dreams come true. One byte at a time".**
+        * *The following trademarks belong to their respective owners: The name "Linux" belongs to Linus Torvalds., The names "KDE" and "Plasma" belong to KDE e.V., The name "Ubuntu" belongs to Canonical, Ltd., The "Octocat" logo and the name "GitHub" belong to GitHub, Inc., The name "YouTube" belongs to Google, Inc., The "Maui" name belongs to Pier Luigi Fiorini., The "Wrinkle icon suite" name belongs to KotusWorks., The name "Mali 400" belongs to ARM, Ltd., The name "Samsung" belongs to the Samsung Group. The name "NiconSystems" belongs to NiconSystems, The name "Facebook belongs to Facebook, Inc., The name "Perfect Choice" belongs to Perfect Choice S.A. de C.V., The name "Qt" belongs to Digia plc.*
+        * *The following trademarks are held in conjuction with 3rd parties (Numix Project): The names "Ozon" and "Ozon OS".*
 
 * Resources - by resources it's understood that this is entirely in reference to materials not created by Nitrux S.A. such as fonts.
 
