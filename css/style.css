@@ -321,6 +321,23 @@
 					margin: 0 auto;
 					width: auto;
 				}
+				
+			#logo-company-container
+			{
+				overflow: hidden;
+				display: block;
+				height: 268px;
+				width: 100%;
+				position: relative;
+			}
+			
+			#logo-company-container img
+			{
+				display: inline-block;
+				position: absolute;
+				margin-left: -540px;
+				overflow: hidden;
+			}
 
 	/* Lists */
 
