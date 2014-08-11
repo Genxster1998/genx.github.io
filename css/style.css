@@ -1300,10 +1300,6 @@ Toggle menu
 .tactive:after {
     content: "\25BC";
     color: #555;}
-.toggle {
-    padding: 1em 2em;
-    display: none;
-    overflow: hidden; }
 .toggle > ul li { line-height: 2.5 }
 .toggle > ul li:before {
     content: "\2714 ";
